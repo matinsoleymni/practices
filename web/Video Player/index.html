@@ -13,21 +13,6 @@
     <div class="flex justify-center mt-8">
         <video class="w-3/4 rounded-xl" controls src="https://blokchainology.com/vid/24.mp4"></video>
     </div>
-
-    <script>
-        const $ = document;
-        const video = $.querySelector("video");
-        video.addEventListener('play', ()=> {
-            video.currentTime = localStorage.getItem("time")
-        });
-        
-        window.onbeforeunload = ()=> {
-            localStorage.setItem("time" , video.currentTime);
-        }
-
-        video.addEventListener('pause', ()=> {
-            localStorage.setItem("time" , video.currentTime);
-        });
-    </script>
 </body>
+<script src="app.js"></script>
 </html>
