@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-center mt-5">
+        <h1 class="text-3xl">Tmrin Video Player - <span class="text-purple-400 text-4xl">24</span></h1>
+    </div>
+    <div class="flex justify-center mt-8">
+        <video class="w-3/4 rounded-xl" controls src="https://blokchainology.com/vid/24.mp4"></video>
+    </div>
+
+    <script>
+        const $ = document;
+        const video = $.querySelector("video");
+        video.addEventListener('play', ()=> {
+            video.currentTime = localStorage.getItem("time")
+        });
+        
+        window.onbeforeunload = ()=> {
+            localStorage.setItem("time" , video.currentTime);
+        }
+
+        video.addEventListener('pause', ()=> {
+            localStorage.setItem("time" , video.currentTime);
+        });
+    </script>
+</body>
+</html>
