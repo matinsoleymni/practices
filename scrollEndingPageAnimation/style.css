@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content
+{
+    margin: 500px 20px;
+    text-align: justify;
+}
+
+#scrollAnim
+{
+    height: 10px;
+    width: 100%;
+    scale: 0 1;
+    background: rgb(190,0,199);
+    background: linear-gradient(24deg, rgba(190,0,199,1) 30%, rgba(0,149,161,1) 61%, rgba(2,131,21,1) 88%);
+    position: fixed;
+    top: 0;
+    transform-origin: right;
+    animation: scrolling both ;
+    animation-timeline: scroll();
+}
+
+@keyframes scrolling {
+    to{
+        scale: 1 1;
+    }
+}
