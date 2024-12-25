@@ -5,4 +5,4 @@
 
 ### سعی کنید خودتون اول بزنید بعد کد رو ببینید موفق باشید 
 
-Live: https://matinsoleymni.github.io/exercise/videoPlayer/
+Live: [https://matinsoleymni.github.io/practices/videoPlayer/](https://matinsoleymni.github.io/practices/videoPlayer/)
